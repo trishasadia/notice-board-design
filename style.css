@@ -1,0 +1,296 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar Styles */
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+.topbar {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .logo {
+    height: 60px;
+    margin-right: 15px;
+  }
+
+  .titles {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+  }
+
+  .titles .en {
+    font-size: 16px;
+  }
+
+  .titles .bn {
+    font-size: 16px;
+  }
+  .navbar,
+    .sub-navbar {
+      display: flex;
+      gap: 25px;
+      padding: 10px 20px;
+      background: white;
+      font-weight: bold;
+    }
+
+    .navbar a,
+    .sub-navbar a {
+      text-decoration: none;
+      color: #00598c;
+    }
+
+    .navbar a:hover,
+    .sub-navbar a:hover {
+      color: #007bff;
+    }
+
+
+
+
+  .main-menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .main-menu li a {
+    text-decoration: none;
+    color: #4967d4;
+    font-weight: bold;
+  }
+  
+  .bottom-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color: #fff;
+    padding: 10px 0;
+    margin: 0;
+  }
+  
+  .bottom-menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+/* Mega Menu Dropdown Styles */
+.menu-item-has-children {
+    position: relative;
+}
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #f9f9f9;
+    padding: 30px;
+    width: 1000px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+/* Show dropdown on hover or focus */
+.menu-item-has-children:hover > .dropdown_menu,
+.menu-item-has-children:focus-within > .dropdown_menu {
+    display: block;
+}
+
+/* Mega Menu Layout */
+.sub-menu.mega-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.sub-menu.mega-menu.mega-menu-colun-4{
+    width: 950px;
+}
+
+/* List items inside mega menu */
+.list-item {
+    flex:1 1 200px;
+}
+.submenu-title{
+    color: black;
+}
+.submenu-title.ul.li{
+    color: #4967d4;
+}
+
+/* Menu Styles */
+.menu-main-top {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+}
+
+.menu-main-top > li {
+    position: relative;
+}
+
+.menu-main-top > li > a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.menu-main-top > li > a:hover {
+    color: #007bff;
+}
+
+.list-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-item ul li {
+    margin: 5px 0;
+}
+
+.list-item ul li a {
+    text-decoration: none;
+    color:#00598c;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.list-item ul li a:hover {
+    color: #007bff;
+    padding-left: 5px;
+}
+
+/* Table Content Styles */
+.notice {
+    background: color(white );
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 1200px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.notice h2 {
+    text-align: center;
+}
+
+.notice-box {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.top-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.entries select {
+    margin-left: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #f2f2f2;
+}
+
+thead th {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #dee2e6;
+    font-weight: bold;
+}
+
+tbody td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #dee2e6;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #0d7a99;
+    color: white;
+    padding: 40px 20px;
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-column h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid white;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
